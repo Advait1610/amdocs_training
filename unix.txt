@@ -1,0 +1,92 @@
+Unix:
+Unix is an multiuser,multitasking,secured,open source operating system.
+
+3 types of shell:
+1.Bourne Shell(1979) ---> sh
+2.Korn Shell(1983) -David Korn ---> ksh
+3.C shell(1970) -Bill Joy ---> csh
+
+
+layers(top to bottom)
+Architecture of Unix OS
+
+Applications
+|
+shell
+|
+kernel
+|
+Hardware --------> Terminals,Printers,Disk
+
+
+Features of Unix
+-Multitasking
+-Command Structure
+-File Security and protection
+-Communication
+-Accounting
+-Unix tools and utilities
+-Open Source
+-Portable
+-Multiuser
+
+
+Commands used often in session
+
+- ls -l 
+- cat > temp1
+- cat temp1
+- history
+- cat file001 file002 > file003
+- cat file004 >> file003
+- wc file003
+- man cat ---> shows description of cat command
+- Working with vi editor(escape button + and shif in some cases)
+ 	Insert text 
+  i - before cursor
+  a - after cursor    
+  A - At the end of line
+  o - open a line below current line
+  h or leftarrow - space to left arrow
+  k or up arrow - up one ine	
+  space,l,or right arrow - space to right
+  W - word to the right
+  d0 - delete to beggining of line
+  Dw delete to end of word
+  
+- mv file004 file005 ---> rename the file
+- rm --> remove the file
+- cal 10 2024 ---> watching calender
+-grep -i "unix" a1 ---> return lines where that specific word is written
+
+
+echo "Enter number:"
+read number
+
+original=$number
+temp=0
+
+while [ $number -ne 0 ]
+do
+   rem = $(( number % 10 ))
+   cube = $(( rem * rem *rem ))
+   temp = $(( temp + cube ))
+   number = $(( number / 10 ))
+done
+
+if [ $original -eq $temp ]
+then
+  echo "armstrong"
+else
+  echo "not armstrong"
+fi
+
+some important inputs
+promt string (-p)
+password input(-s)
+parsing the array(-a)
+Limiting length of Input(-n)
+
+
+
+
